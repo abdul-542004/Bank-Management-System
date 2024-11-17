@@ -1,5 +1,6 @@
 #pragma once
 #include "BankCustomer.h"
+#include "Storage.h"
 namespace BankManagementSystem {
 
 	using namespace System;
@@ -14,8 +15,8 @@ namespace BankManagementSystem {
 	/// </summary>
 	public ref class CreateAccount : public System::Windows::Forms::Form
 	{
+	private:
 	public:
-		
 		CreateAccount(void)
 		{
 			InitializeComponent();
@@ -27,6 +28,7 @@ namespace BankManagementSystem {
 			//TODO: Add the constructor code here
 			//
 		}
+		
 	private: System::Windows::Forms::Button^ createButton;
 	private: System::Windows::Forms::Button^ resetButton;
 
@@ -314,7 +316,12 @@ private: System::Void createButton_Click(System::Object^ sender, System::EventAr
 	}
 
 	// insertion code goes here.
+	int accountNumber = Storage::storageTree->GenerateUniqueKey();
+	BankCustomer^ newCustomer = gcnew BankCustomer(accountNumber, name, cnic, gender, accountType, pin, balance);
+	Storage::storageTree->Insert(newCustomer);
 
+	label9->Text = L"Account Number: " + accountNumber.ToString();
+	MessageBox::Show(L"Account Created Successfully!", L"Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
 
 }
 private: System::Void resetButton_Click(System::Object^ sender, System::EventArgs^ e) {

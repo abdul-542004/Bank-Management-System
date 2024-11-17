@@ -15,15 +15,15 @@ namespace BankManagementSystem {
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
-	public:
 
-		
-		
+	private:
+	public:
 
 		MainForm(void)
 		{
 
 			InitializeComponent();
+			
 			
 			
 			
@@ -162,21 +162,23 @@ namespace BankManagementSystem {
 
 		}
 #pragma endregion
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Close();
-	}
-private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	//hello
-	LoginForm^ login = gcnew LoginForm();
-	login->Show();
-	this->Hide();
+	private:
 
-}
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	//hello
-	button1_Click(sender, e);
+		System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->Close();
+		}
+		System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+			//hello
+			LoginForm^ login = gcnew LoginForm();
+			login->Show();
+			this->Hide();
+
+		}
+		System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+			//hello
+			button1_Click(sender, e);
 	
-}
+		}
 
 };
 }

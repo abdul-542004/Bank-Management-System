@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Storage.h"
 namespace BankManagementSystem {
 
 	using namespace System;
@@ -38,6 +38,8 @@ namespace BankManagementSystem {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Button^ DeleteButton;
+
 	protected:
 
 	private:
@@ -57,6 +59,7 @@ namespace BankManagementSystem {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->DeleteButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -95,12 +98,25 @@ namespace BankManagementSystem {
 			this->label3->TabIndex = 9;
 			this->label3->Text = L"Enter Account Number: ";
 			// 
+			// DeleteButton
+			// 
+			this->DeleteButton->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->DeleteButton->Location = System::Drawing::Point(241, 255);
+			this->DeleteButton->Name = L"DeleteButton";
+			this->DeleteButton->Size = System::Drawing::Size(120, 35);
+			this->DeleteButton->TabIndex = 16;
+			this->DeleteButton->Text = L"Delete";
+			this->DeleteButton->UseVisualStyleBackColor = true;
+			this->DeleteButton->Click += gcnew System::EventHandler(this, &DeleteAccount::DeleteButton_Click);
+			// 
 			// DeleteAccount
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
 			this->ClientSize = System::Drawing::Size(684, 731);
+			this->Controls->Add(this->DeleteButton);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
@@ -114,5 +130,34 @@ namespace BankManagementSystem {
 		}
 #pragma endregion
 
-	};
+	private: System::Void DeleteButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Get the account number from the textBox1
+		String^ inputText = textBox1->Text;
+
+		// Check if the input is not empty
+		if (String::IsNullOrEmpty(inputText)) {
+			MessageBox::Show("Please enter an account number.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+
+		int accountNumber;
+		// Try to parse the input as an integer
+		if (!Int32::TryParse(inputText, accountNumber)) {
+			MessageBox::Show("Please enter a valid account number.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+		bool success = false;
+		success = Storage::storageTree->Delete(accountNumber);  // Call your delete method from the AVL tree
+
+		if (success) {
+			MessageBox::Show("Account deleted successfully.", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		}
+		else {
+			MessageBox::Show("Account not found.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+		
+
+		
+	}
+};
 }

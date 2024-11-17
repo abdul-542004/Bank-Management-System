@@ -42,6 +42,35 @@ Class BankCustomer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Double balance : Public
   Methods:
     DisplayDetails(): PrivateScope, Public, HideBySig
+Class AVLNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(BankCustomer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    BankCustomer customer : Public
+    AVLNode left : Public
+    AVLNode right : Public
+    Int32 height : Public
+Class AVLTree: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GenerateUniqueKey(): PrivateScope, Public, HideBySig
+    Insert(BankCustomer): PrivateScope, Public, HideBySig
+    Delete(Int32): PrivateScope, Public, HideBySig
+    Search(Int32): PrivateScope, Public, HideBySig
+    Traversal(DynamicArray<BankCustomer ^>&): PrivateScope, Public, HideBySig
+    EditInformation(Int32, BankCustomer): PrivateScope, Public, HideBySig
+Class DynamicArray<BankCustomer ^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    op_Subscript(Int32): PrivateScope, Public, HideBySig, SpecialName
+    push_back(BankCustomer): PrivateScope, Public, HideBySig
+    getSize(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class BankManagementSystem.Storage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    AVLTree storageTree : Public, Static
 Class BankManagementSystem.CreateAccount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -60,24 +89,13 @@ Class BankManagementSystem.EditInformation: AutoLayout, AnsiClass, Class, Public
 Class BankManagementSystem.ListAllAccounts: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    DynamicArray<BankCustomer ^> array : Public
 Class BankManagementSystem.AdminForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     loadForm(Object): PrivateScope, Public, HideBySig
-Class AVLNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-    Void .ctor(BankCustomer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Fields:
-    BankCustomer customer : Public
-    AVLNode left : Public
-    AVLNode right : Public
-    Int32 height : Public
-Class AVLTree: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Methods:
-    GenerateUniqueKey(): PrivateScope, Public, HideBySig
-    Insert(BankCustomer): PrivateScope, Public, HideBySig
-    DisplayAllCustomers(): PrivateScope, Public, HideBySig
 Class BankManagementSystem.CheckLogsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

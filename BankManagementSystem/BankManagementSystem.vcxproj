@@ -130,6 +130,7 @@
     <ClCompile Include="DeleteAccount.cpp" />
     <ClCompile Include="DeletedAccounts.cpp" />
     <ClCompile Include="DepositCashForm.cpp" />
+    <ClCompile Include="DynamicArray.cpp" />
     <ClCompile Include="EditInformation.cpp" />
     <ClCompile Include="ListAllAccounts.cpp" />
     <ClCompile Include="LoginForm.cpp" />
@@ -145,7 +146,6 @@
     <ClInclude Include="AdminForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="AVL.h" />
     <ClInclude Include="AVLNode.h" />
     <ClInclude Include="AVLTree.h" />
     <ClInclude Include="BankCustomer.h" />
@@ -164,6 +164,7 @@
     <ClInclude Include="DepositCashForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="DynamicArray.h" />
     <ClInclude Include="EditInformation.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -183,6 +184,7 @@
     <ClInclude Include="StaffForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Storage.h" />
     <ClInclude Include="WithdrawCashForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

@@ -1,4 +1,5 @@
 #pragma once
+#include "Storage.h" // to get Storage::storageTree
 
 namespace BankManagementSystem {
 
@@ -21,6 +22,10 @@ namespace BankManagementSystem {
 			//
 			//TODO: Add the constructor code here
 			//
+			this->comboBox1->Items->Add("Male");
+			this->comboBox1->Items->Add("Female");
+			this->comboBox2->Items->Add("Current");
+			this->comboBox2->Items->Add("Saving");
 		}
 
 	protected:
@@ -35,18 +40,35 @@ namespace BankManagementSystem {
 			}
 		}
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::ComboBox^ comboBox2;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
+
+
+
+
+
+
+
+
+
+
+
+
+	private: System::Windows::Forms::Button^ saveButton;
 	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::Label^ label7;
-	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
+
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::ComboBox^ comboBox1;
+	private: System::Windows::Forms::ComboBox^ comboBox2;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::Button^ searchBtn;
+
+
 	protected:
 
 	protected:
@@ -64,19 +86,22 @@ namespace BankManagementSystem {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(EditInformation::typeid));
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->saveButton = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->searchBtn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label2
@@ -90,111 +115,133 @@ namespace BankManagementSystem {
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Change Account Information";
 			// 
-			// textBox3
+			// saveButton
 			// 
-			this->textBox3->Location = System::Drawing::Point(317, 423);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(247, 20);
-			this->textBox3->TabIndex = 26;
-			// 
-			// comboBox2
-			// 
-			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Current", L"Saving" });
-			this->comboBox2->Location = System::Drawing::Point(317, 318);
-			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(247, 21);
-			this->comboBox2->TabIndex = 25;
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Male", L"Female" });
-			this->comboBox1->Location = System::Drawing::Point(317, 268);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(247, 21);
-			this->comboBox1->TabIndex = 24;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(317, 218);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(247, 20);
-			this->textBox2->TabIndex = 23;
+			this->saveButton->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->saveButton->Location = System::Drawing::Point(246, 518);
+			this->saveButton->Name = L"saveButton";
+			this->saveButton->Size = System::Drawing::Size(120, 35);
+			this->saveButton->TabIndex = 29;
+			this->saveButton->Text = L"Save";
+			this->saveButton->UseVisualStyleBackColor = true;
+			this->saveButton->Click += gcnew System::EventHandler(this, &EditInformation::saveButton_Click);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(317, 383);
+			this->textBox1->Location = System::Drawing::Point(330, 235);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(247, 20);
-			this->textBox1->TabIndex = 22;
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label7->Location = System::Drawing::Point(64, 418);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(92, 25);
-			this->label7->TabIndex = 20;
-			this->label7->Text = L"Enter Pin:";
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label6->Location = System::Drawing::Point(64, 119);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(160, 25);
-			this->label6->TabIndex = 19;
-			this->label6->Text = L"Account Number:";
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label5->Location = System::Drawing::Point(64, 318);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(129, 25);
-			this->label5->TabIndex = 18;
-			this->label5->Text = L"Account Type:";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label4->Location = System::Drawing::Point(64, 268);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(149, 25);
-			this->label4->TabIndex = 17;
-			this->label4->Text = L"Specify Gender: ";
+			this->textBox1->TabIndex = 37;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label3->Location = System::Drawing::Point(64, 218);
+			this->label3->Location = System::Drawing::Point(77, 284);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(113, 25);
-			this->label3->TabIndex = 16;
-			this->label3->Text = L"Enter CNIC: ";
+			this->label3->Size = System::Drawing::Size(108, 25);
+			this->label3->TabIndex = 31;
+			this->label3->Text = L"Enter CNIC:";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
+			this->label4->Location = System::Drawing::Point(77, 339);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(149, 25);
+			this->label4->TabIndex = 32;
+			this->label4->Text = L"Specify Gender: ";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
+			this->label5->Location = System::Drawing::Point(77, 395);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(129, 25);
+			this->label5->TabIndex = 33;
+			this->label5->Text = L"Account Type:";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
+			this->label6->Location = System::Drawing::Point(77, 135);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(160, 25);
+			this->label6->TabIndex = 34;
+			this->label6->Text = L"Account Number:";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
+			this->label7->Location = System::Drawing::Point(77, 451);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(92, 25);
+			this->label7->TabIndex = 35;
+			this->label7->Text = L"Reset Pin:";
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label1->Location = System::Drawing::Point(64, 377);
+			this->label1->Location = System::Drawing::Point(77, 229);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(247, 25);
-			this->label1->TabIndex = 15;
+			this->label1->TabIndex = 30;
 			this->label1->Text = L"Enter Customer\'s Full Name:";
 			// 
-			// textBox5
+			// textBox2
 			// 
-			this->textBox5->Location = System::Drawing::Point(317, 125);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(247, 20);
-			this->textBox5->TabIndex = 28;
+			this->textBox2->Location = System::Drawing::Point(330, 290);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(247, 20);
+			this->textBox2->TabIndex = 38;
+			// 
+			// comboBox1
+			// 
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(330, 345);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(247, 21);
+			this->comboBox1->TabIndex = 39;
+			// 
+			// comboBox2
+			// 
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Location = System::Drawing::Point(330, 401);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(247, 21);
+			this->comboBox2->TabIndex = 40;
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(330, 457);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(247, 20);
+			this->textBox3->TabIndex = 41;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(330, 141);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(247, 20);
+			this->textBox4->TabIndex = 42;
+			// 
+			// searchBtn
+			// 
+			this->searchBtn->FlatAppearance->BorderSize = 0;
+			this->searchBtn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->searchBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"searchBtn.Image")));
+			this->searchBtn->Location = System::Drawing::Point(583, 138);
+			this->searchBtn->Name = L"searchBtn";
+			this->searchBtn->Size = System::Drawing::Size(48, 25);
+			this->searchBtn->TabIndex = 43;
+			this->searchBtn->UseVisualStyleBackColor = true;
+			this->searchBtn->Click += gcnew System::EventHandler(this, &EditInformation::searchBtn_Click);
 			// 
 			// EditInformation
 			// 
@@ -202,7 +249,8 @@ namespace BankManagementSystem {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
 			this->ClientSize = System::Drawing::Size(684, 731);
-			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->searchBtn);
+			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->comboBox2);
 			this->Controls->Add(this->comboBox1);
@@ -214,8 +262,8 @@ namespace BankManagementSystem {
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label1);
+			this->Controls->Add(this->saveButton);
 			this->Controls->Add(this->label2);
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"EditInformation";
 			this->Text = L"EditInformation";
 			this->ResumeLayout(false);
@@ -223,5 +271,57 @@ namespace BankManagementSystem {
 
 		}
 #pragma endregion
-	};
+	private: System::Void searchBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Get account number from textBox4
+		int accountNumber = Convert::ToInt32(textBox4->Text);
+
+		// Search for the customer in the AVL Tree
+		BankCustomer^ customer = Storage::storageTree->Search(accountNumber);
+
+		if (customer != nullptr) {
+			// Populate the form fields with customer data
+			textBox1->Text = customer->name;
+			textBox2->Text = customer->cnic;
+			comboBox1->SelectedItem = customer->gender; // assuming gender is a string in your model
+			comboBox2->SelectedItem = customer->accountType; // assuming account type is a string in your model
+			textBox3->Text = customer->pin;
+		}
+		else {
+			MessageBox::Show("Customer not found.");
+		}
+	}
+
+	private: System::Void saveButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Get account number from textBox4
+		int accountNumber = Convert::ToInt32(textBox4->Text);
+
+		// Get updated customer details from the form fields
+		String^ fullName = textBox1->Text;
+		String^ cnic = textBox2->Text;
+		String^ gender = comboBox1->SelectedItem->ToString();
+		String^ accountType = comboBox2->SelectedItem->ToString();
+		String^ pin = textBox3->Text;
+
+		// Search for the customer in the AVL Tree
+		BankCustomer^ customer = Storage::storageTree->Search(accountNumber);
+
+		if (customer != nullptr) {
+			// Update the customer information
+			customer->name = fullName;
+			customer->cnic = cnic;
+			customer->gender = gender;
+			customer->accountType = accountType;
+			customer->pin = pin;
+
+			// Call the AVL Tree edit_information function (if needed)
+			Storage::storageTree->EditInformation(accountNumber, customer);
+
+			MessageBox::Show("Customer information updated.");
+		}
+		else {
+			MessageBox::Show("Customer not found.");
+		}
+	}
+
+};
 }
