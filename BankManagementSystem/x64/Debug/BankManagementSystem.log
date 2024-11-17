@@ -1,0 +1,7 @@
+﻿  AdminForm.cpp
+  CreateAccount.cpp
+  LoginForm.cpp
+  MainForm.cpp
+  Generating Code...
+  AccountInfoForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  BankManagementSystem.vcxproj -> E:\Repos\BankManagementSystem\x64\Debug\BankManagementSystem.exe

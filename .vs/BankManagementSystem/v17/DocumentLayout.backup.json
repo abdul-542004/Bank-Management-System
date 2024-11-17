@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Repos\\BankManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\MainForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\MainForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\EditInformation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 303,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditInformation.h [Design]",
+              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h",
+              "RelativeDocumentMoniker": "BankManagementSystem\\EditInformation.h",
+              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h [Design]",
+              "RelativeToolTip": "BankManagementSystem\\EditInformation.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-17T05:09:19.468Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cpp",
+              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\MainForm.cpp",
+              "RelativeDocumentMoniker": "BankManagementSystem\\MainForm.cpp",
+              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\MainForm.cpp",
+              "RelativeToolTip": "BankManagementSystem\\MainForm.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-17T05:22:21.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 97,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

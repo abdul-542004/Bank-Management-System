@@ -1,0 +1,16 @@
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.vcxproj.AssemblyReference.cache
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.MainForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.vcxproj.GenerateResource.cache
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.LoginForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.AdminForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.CreateAccount.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.DeleteAccount.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.DeletedAccounts.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.EditInformation.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.ListAllAccounts.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.Search.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.AccountInfoForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.CheckLogsForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.DepositCashForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.StaffForm.resources
+E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankManagementSystem.WithdrawCashForm.resources

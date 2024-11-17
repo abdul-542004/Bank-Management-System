@@ -1,0 +1,75 @@
+  BankManagementSystem.AccountInfoForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.AdminForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.CheckLogsForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.CreateAccount.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.DeleteAccount.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.DeletedAccounts.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.DepositCashForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.EditInformation.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.ListAllAccounts.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.LoginForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.MainForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.Search.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.StaffForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.WithdrawCashForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly BankManagementSystem, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class BankManagementSystem.AccountInfoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.CreateAccount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.DeleteAccount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.DeletedAccounts: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.Search: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.EditInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.ListAllAccounts: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.AdminForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    loadForm(Object): PrivateScope, Public, HideBySig
+Class BankManagementSystem.CheckLogsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.DepositCashForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.WithdrawCashForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.StaffForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    loadForm(Object): PrivateScope, Public, HideBySig
+Class BankManagementSystem.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankManagementSystem.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
