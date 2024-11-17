@@ -30,6 +30,18 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class BankManagementSystem.AccountInfoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class BankCustomer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, System.String, System.String, System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 accountNumber : Public
+    System.String name : Public
+    System.String cnic : Public
+    System.String gender : Public
+    System.String accountType : Public
+    System.String pin : Public
+    Double balance : Public
+  Methods:
+    DisplayDetails(): PrivateScope, Public, HideBySig
 Class BankManagementSystem.CreateAccount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -53,6 +65,19 @@ Class BankManagementSystem.AdminForm: AutoLayout, AnsiClass, Class, Public, Befo
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     loadForm(Object): PrivateScope, Public, HideBySig
+Class AVLNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(BankCustomer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    BankCustomer customer : Public
+    AVLNode left : Public
+    AVLNode right : Public
+    Int32 height : Public
+Class AVLTree: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GenerateUniqueKey(): PrivateScope, Public, HideBySig
+    Insert(BankCustomer): PrivateScope, Public, HideBySig
+    DisplayAllCustomers(): PrivateScope, Public, HideBySig
 Class BankManagementSystem.CheckLogsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

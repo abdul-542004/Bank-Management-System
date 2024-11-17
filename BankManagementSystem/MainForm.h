@@ -9,15 +9,24 @@ namespace BankManagementSystem {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
+
 	/// <summary>
 	/// Summary for MainForm
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
 	public:
+
+		
+		
+
 		MainForm(void)
 		{
+
 			InitializeComponent();
+			
+			
+			
 			//
 			//TODO: Add the constructor code here
 			//
@@ -157,14 +166,16 @@ namespace BankManagementSystem {
 		this->Close();
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	LoginForm^ loginForm = gcnew LoginForm();
-	loginForm->Show();
+	//hello
+	LoginForm^ login = gcnew LoginForm();
+	login->Show();
 	this->Hide();
+
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	LoginForm^ loginForm = gcnew LoginForm();
-	loginForm->Show();
-	this->Hide();
+	//hello
+	button1_Click(sender, e);
+	
 }
 
 };

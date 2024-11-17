@@ -142,6 +142,7 @@ namespace BankManagementSystem {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		
 		if (this->textBox2->Text == "1122") {
 			AdminForm^ adminPanel = gcnew AdminForm();
 			adminPanel->Show();

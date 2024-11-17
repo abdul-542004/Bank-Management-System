@@ -122,6 +122,9 @@
   <ItemGroup>
     <ClCompile Include="AccountInfoForm.cpp" />
     <ClCompile Include="AdminForm.cpp" />
+    <ClCompile Include="AVLNode.cpp" />
+    <ClCompile Include="AVLTree.cpp" />
+    <ClCompile Include="BankCustomer.cpp" />
     <ClCompile Include="CheckLogsForm.cpp" />
     <ClCompile Include="CreateAccount.cpp" />
     <ClCompile Include="DeleteAccount.cpp" />
@@ -143,6 +146,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="AVL.h" />
+    <ClInclude Include="AVLNode.h" />
+    <ClInclude Include="AVLTree.h" />
+    <ClInclude Include="BankCustomer.h" />
     <ClInclude Include="CheckLogsForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

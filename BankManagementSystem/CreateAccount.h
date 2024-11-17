@@ -1,5 +1,5 @@
 #pragma once
-
+#include "BankCustomer.h"
 namespace BankManagementSystem {
 
 	using namespace System;
@@ -15,6 +15,7 @@ namespace BankManagementSystem {
 	public ref class CreateAccount : public System::Windows::Forms::Form
 	{
 	public:
+		
 		CreateAccount(void)
 		{
 			InitializeComponent();
@@ -26,6 +27,12 @@ namespace BankManagementSystem {
 			//TODO: Add the constructor code here
 			//
 		}
+	private: System::Windows::Forms::Button^ createButton;
+	private: System::Windows::Forms::Button^ resetButton;
+
+
+
+	
 
 	protected:
 		/// <summary>
@@ -85,6 +92,8 @@ namespace BankManagementSystem {
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->createButton = (gcnew System::Windows::Forms::Button());
+			this->resetButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -223,12 +232,38 @@ namespace BankManagementSystem {
 			this->label9->TabIndex = 14;
 			this->label9->Text = L"Your Account Number will be displayed here";
 			// 
+			// createButton
+			// 
+			this->createButton->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->createButton->Location = System::Drawing::Point(107, 537);
+			this->createButton->Name = L"createButton";
+			this->createButton->Size = System::Drawing::Size(120, 35);
+			this->createButton->TabIndex = 15;
+			this->createButton->Text = L"Create";
+			this->createButton->UseVisualStyleBackColor = true;
+			this->createButton->Click += gcnew System::EventHandler(this, &CreateAccount::createButton_Click);
+			// 
+			// resetButton
+			// 
+			this->resetButton->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->resetButton->Location = System::Drawing::Point(301, 537);
+			this->resetButton->Name = L"resetButton";
+			this->resetButton->Size = System::Drawing::Size(120, 35);
+			this->resetButton->TabIndex = 16;
+			this->resetButton->Text = L"Reset";
+			this->resetButton->UseVisualStyleBackColor = true;
+			this->resetButton->Click += gcnew System::EventHandler(this, &CreateAccount::resetButton_Click);
+			// 
 			// CreateAccount
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
 			this->ClientSize = System::Drawing::Size(684, 731);
+			this->Controls->Add(this->resetButton);
+			this->Controls->Add(this->createButton);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->textBox3);
@@ -253,5 +288,43 @@ namespace BankManagementSystem {
 		}
 #pragma endregion
 	
+
+private: System::Void createButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ name = textBox1->Text;
+	String^ cnic = textBox2->Text;
+	String^ gender = comboBox1->Text;
+	String^ accountType = comboBox2->Text;
+	String^ pin = textBox3->Text;
+	double balance;
+
+
+
+	if (String::IsNullOrWhiteSpace(name) || String::IsNullOrWhiteSpace(cnic) ||
+		String::IsNullOrWhiteSpace(gender) || String::IsNullOrWhiteSpace(accountType) ||
+		String::IsNullOrWhiteSpace(pin) || !Double::TryParse(textBox4->Text, balance))
+	{
+		MessageBox::Show(L"Please fill all fields correctly!", L"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		return;
+	}
+
+	if (balance < 500)
+	{
+		MessageBox::Show(L"Minimum balance is 500.", L"Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		return;
+	}
+
+	// insertion code goes here.
+
+
+}
+private: System::Void resetButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->textBox1->Clear();
+	this->textBox2->Clear();
+	this->comboBox1->SelectedIndex = -1;
+	this->comboBox2->SelectedIndex = -1;
+	this->textBox3->Clear();
+	this->textBox4->Clear();
+	this->label9->Text = L"Your Account Number will be displayed here";
+}
 };
 }
