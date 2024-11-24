@@ -2,7 +2,7 @@
 #include "AccountInfoForm.h"
 #include "DepositCashForm.h"
 #include "WithdrawCashForm.h"
-#include "CheckLogsForm.h"
+#include "DeletedAccounts.h"
 namespace BankManagementSystem {
 
 	using namespace System;
@@ -82,9 +82,10 @@ namespace BankManagementSystem {
 			// mainpanel
 			// 
 			this->mainpanel->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->mainpanel->Location = System::Drawing::Point(300, 30);
+			this->mainpanel->Location = System::Drawing::Point(400, 37);
+			this->mainpanel->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->mainpanel->Name = L"mainpanel";
-			this->mainpanel->Size = System::Drawing::Size(684, 731);
+			this->mainpanel->Size = System::Drawing::Size(912, 900);
 			this->mainpanel->TabIndex = 5;
 			// 
 			// panelside
@@ -96,17 +97,19 @@ namespace BankManagementSystem {
 			this->panelside->Controls->Add(this->checkLogsBtn);
 			this->panelside->Controls->Add(this->depositCashBtn);
 			this->panelside->Dock = System::Windows::Forms::DockStyle::Left;
-			this->panelside->Location = System::Drawing::Point(0, 30);
+			this->panelside->Location = System::Drawing::Point(0, 37);
+			this->panelside->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panelside->Name = L"panelside";
-			this->panelside->Size = System::Drawing::Size(300, 731);
+			this->panelside->Size = System::Drawing::Size(400, 900);
 			this->panelside->TabIndex = 3;
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(103, 48);
+			this->pictureBox1->Location = System::Drawing::Point(137, 59);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(100, 100);
+			this->pictureBox1->Size = System::Drawing::Size(133, 123);
 			this->pictureBox1->TabIndex = 6;
 			this->pictureBox1->TabStop = false;
 			// 
@@ -120,9 +123,10 @@ namespace BankManagementSystem {
 			this->withdrawCashBtn->ForeColor = System::Drawing::Color::White;
 			this->withdrawCashBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"withdrawCashBtn.Image")));
 			this->withdrawCashBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->withdrawCashBtn->Location = System::Drawing::Point(44, 370);
+			this->withdrawCashBtn->Location = System::Drawing::Point(59, 455);
+			this->withdrawCashBtn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->withdrawCashBtn->Name = L"withdrawCashBtn";
-			this->withdrawCashBtn->Size = System::Drawing::Size(212, 50);
+			this->withdrawCashBtn->Size = System::Drawing::Size(283, 62);
 			this->withdrawCashBtn->TabIndex = 5;
 			this->withdrawCashBtn->Text = L"Withdraw Cash";
 			this->withdrawCashBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -139,9 +143,10 @@ namespace BankManagementSystem {
 			this->checkAccInfoBtn->ForeColor = System::Drawing::Color::White;
 			this->checkAccInfoBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkAccInfoBtn.Image")));
 			this->checkAccInfoBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->checkAccInfoBtn->Location = System::Drawing::Point(44, 238);
+			this->checkAccInfoBtn->Location = System::Drawing::Point(59, 293);
+			this->checkAccInfoBtn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->checkAccInfoBtn->Name = L"checkAccInfoBtn";
-			this->checkAccInfoBtn->Size = System::Drawing::Size(212, 50);
+			this->checkAccInfoBtn->Size = System::Drawing::Size(283, 62);
 			this->checkAccInfoBtn->TabIndex = 0;
 			this->checkAccInfoBtn->Text = L"Account Info";
 			this->checkAccInfoBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -158,9 +163,10 @@ namespace BankManagementSystem {
 			this->checkLogsBtn->ForeColor = System::Drawing::Color::White;
 			this->checkLogsBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkLogsBtn.Image")));
 			this->checkLogsBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->checkLogsBtn->Location = System::Drawing::Point(44, 436);
+			this->checkLogsBtn->Location = System::Drawing::Point(59, 537);
+			this->checkLogsBtn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->checkLogsBtn->Name = L"checkLogsBtn";
-			this->checkLogsBtn->Size = System::Drawing::Size(212, 50);
+			this->checkLogsBtn->Size = System::Drawing::Size(283, 62);
 			this->checkLogsBtn->TabIndex = 1;
 			this->checkLogsBtn->Text = L"Check User Logs";
 			this->checkLogsBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -177,9 +183,10 @@ namespace BankManagementSystem {
 			this->depositCashBtn->ForeColor = System::Drawing::Color::White;
 			this->depositCashBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"depositCashBtn.Image")));
 			this->depositCashBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->depositCashBtn->Location = System::Drawing::Point(44, 304);
+			this->depositCashBtn->Location = System::Drawing::Point(59, 374);
+			this->depositCashBtn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->depositCashBtn->Name = L"depositCashBtn";
-			this->depositCashBtn->Size = System::Drawing::Size(212, 50);
+			this->depositCashBtn->Size = System::Drawing::Size(283, 62);
 			this->depositCashBtn->TabIndex = 2;
 			this->depositCashBtn->Text = L"Deposit Cash";
 			this->depositCashBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -191,19 +198,22 @@ namespace BankManagementSystem {
 			this->panelheader->BackColor = System::Drawing::Color::Gray;
 			this->panelheader->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panelheader->Location = System::Drawing::Point(0, 0);
+			this->panelheader->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panelheader->Name = L"panelheader";
-			this->panelheader->Size = System::Drawing::Size(984, 30);
+			this->panelheader->Size = System::Drawing::Size(1312, 37);
 			this->panelheader->TabIndex = 4;
 			// 
 			// StaffForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(984, 761);
+			this->ClientSize = System::Drawing::Size(1312, 937);
 			this->Controls->Add(this->mainpanel);
 			this->Controls->Add(this->panelside);
 			this->Controls->Add(this->panelheader);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"StaffForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"StaffForm";
 			this->panelside->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -244,7 +254,7 @@ private: System::Void withdrawCashBtn_Click(System::Object^ sender, System::Even
 	this->loadForm(withdrawCashForm);
 }
 private: System::Void checkLogsBtn_Click(System::Object^ sender, System::EventArgs^ e) {
-	CheckLogsForm^ checkLogsForm = gcnew CheckLogsForm();
+	DeletedAccounts^ checkLogsForm = gcnew DeletedAccounts();
 	this->loadForm(checkLogsForm);
 }
 };

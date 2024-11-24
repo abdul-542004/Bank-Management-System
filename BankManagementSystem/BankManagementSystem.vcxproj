@@ -122,6 +122,8 @@
   <ItemGroup>
     <ClCompile Include="AccountInfoForm.cpp" />
     <ClCompile Include="AdminForm.cpp" />
+    <ClCompile Include="ATM.cpp" />
+    <ClCompile Include="ATMServices.cpp" />
     <ClCompile Include="AVLNode.cpp" />
     <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="BankCustomer.cpp" />
@@ -132,6 +134,7 @@
     <ClCompile Include="DepositCashForm.cpp" />
     <ClCompile Include="DynamicArray.cpp" />
     <ClCompile Include="EditInformation.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="ListAllAccounts.cpp" />
     <ClCompile Include="LoginForm.cpp" />
     <ClCompile Include="MainForm.cpp" />
@@ -144,6 +147,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="AdminForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ATM.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ATMServices.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="AVLNode.h" />
@@ -168,7 +177,7 @@
     <ClInclude Include="EditInformation.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Linked_List.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="ListAllAccounts.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -195,6 +204,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATM.resx">
+      <DependentUpon>ATM.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATMServices.resx">
+      <DependentUpon>ATMServices.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckLogsForm.resx">
       <DependentUpon>CheckLogsForm.h</DependentUpon>

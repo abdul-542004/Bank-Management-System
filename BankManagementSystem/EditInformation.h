@@ -109,9 +109,10 @@ namespace BankManagementSystem {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Bahnschrift SemiBold SemiConden", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(63, 57);
+			this->label2->Location = System::Drawing::Point(84, 70);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(312, 33);
+			this->label2->Size = System::Drawing::Size(398, 41);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Change Account Information";
 			// 
@@ -119,9 +120,10 @@ namespace BankManagementSystem {
 			// 
 			this->saveButton->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->saveButton->Location = System::Drawing::Point(246, 518);
+			this->saveButton->Location = System::Drawing::Point(328, 638);
+			this->saveButton->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->saveButton->Name = L"saveButton";
-			this->saveButton->Size = System::Drawing::Size(120, 35);
+			this->saveButton->Size = System::Drawing::Size(160, 43);
 			this->saveButton->TabIndex = 29;
 			this->saveButton->Text = L"Save";
 			this->saveButton->UseVisualStyleBackColor = true;
@@ -129,18 +131,22 @@ namespace BankManagementSystem {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(330, 235);
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox1->Location = System::Drawing::Point(440, 289);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(247, 20);
+			this->textBox1->Size = System::Drawing::Size(328, 28);
 			this->textBox1->TabIndex = 37;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label3->Location = System::Drawing::Point(77, 284);
+			this->label3->Location = System::Drawing::Point(103, 350);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(108, 25);
+			this->label3->Size = System::Drawing::Size(135, 32);
 			this->label3->TabIndex = 31;
 			this->label3->Text = L"Enter CNIC:";
 			// 
@@ -148,9 +154,10 @@ namespace BankManagementSystem {
 			// 
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label4->Location = System::Drawing::Point(77, 339);
+			this->label4->Location = System::Drawing::Point(103, 417);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(149, 25);
+			this->label4->Size = System::Drawing::Size(189, 32);
 			this->label4->TabIndex = 32;
 			this->label4->Text = L"Specify Gender: ";
 			// 
@@ -158,9 +165,10 @@ namespace BankManagementSystem {
 			// 
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label5->Location = System::Drawing::Point(77, 395);
+			this->label5->Location = System::Drawing::Point(103, 486);
+			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(129, 25);
+			this->label5->Size = System::Drawing::Size(164, 32);
 			this->label5->TabIndex = 33;
 			this->label5->Text = L"Account Type:";
 			// 
@@ -168,9 +176,10 @@ namespace BankManagementSystem {
 			// 
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label6->Location = System::Drawing::Point(77, 135);
+			this->label6->Location = System::Drawing::Point(103, 166);
+			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(160, 25);
+			this->label6->Size = System::Drawing::Size(202, 32);
 			this->label6->TabIndex = 34;
 			this->label6->Text = L"Account Number:";
 			// 
@@ -178,9 +187,10 @@ namespace BankManagementSystem {
 			// 
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label7->Location = System::Drawing::Point(77, 451);
+			this->label7->Location = System::Drawing::Point(103, 555);
+			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(92, 25);
+			this->label7->Size = System::Drawing::Size(116, 32);
 			this->label7->TabIndex = 35;
 			this->label7->Text = L"Reset Pin:";
 			// 
@@ -188,47 +198,63 @@ namespace BankManagementSystem {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label1->Location = System::Drawing::Point(77, 229);
+			this->label1->Location = System::Drawing::Point(103, 282);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(247, 25);
+			this->label1->Size = System::Drawing::Size(315, 32);
 			this->label1->TabIndex = 30;
 			this->label1->Text = L"Enter Customer\'s Full Name:";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(330, 290);
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox2->Location = System::Drawing::Point(440, 357);
+			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(247, 20);
+			this->textBox2->Size = System::Drawing::Size(328, 28);
 			this->textBox2->TabIndex = 38;
 			// 
 			// comboBox1
 			// 
+			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(330, 345);
+			this->comboBox1->Location = System::Drawing::Point(440, 425);
+			this->comboBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(247, 21);
+			this->comboBox1->Size = System::Drawing::Size(328, 30);
 			this->comboBox1->TabIndex = 39;
 			// 
 			// comboBox2
 			// 
+			this->comboBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Location = System::Drawing::Point(330, 401);
+			this->comboBox2->Location = System::Drawing::Point(440, 494);
+			this->comboBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(247, 21);
+			this->comboBox2->Size = System::Drawing::Size(328, 30);
 			this->comboBox2->TabIndex = 40;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(330, 457);
+			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox3->Location = System::Drawing::Point(440, 562);
+			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(247, 20);
+			this->textBox3->Size = System::Drawing::Size(328, 28);
 			this->textBox3->TabIndex = 41;
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(330, 141);
+			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox4->Location = System::Drawing::Point(440, 174);
+			this->textBox4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(247, 20);
+			this->textBox4->Size = System::Drawing::Size(328, 28);
 			this->textBox4->TabIndex = 42;
 			// 
 			// searchBtn
@@ -236,19 +262,20 @@ namespace BankManagementSystem {
 			this->searchBtn->FlatAppearance->BorderSize = 0;
 			this->searchBtn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->searchBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"searchBtn.Image")));
-			this->searchBtn->Location = System::Drawing::Point(583, 138);
+			this->searchBtn->Location = System::Drawing::Point(777, 170);
+			this->searchBtn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->searchBtn->Name = L"searchBtn";
-			this->searchBtn->Size = System::Drawing::Size(48, 25);
+			this->searchBtn->Size = System::Drawing::Size(64, 31);
 			this->searchBtn->TabIndex = 43;
 			this->searchBtn->UseVisualStyleBackColor = true;
 			this->searchBtn->Click += gcnew System::EventHandler(this, &EditInformation::searchBtn_Click);
 			// 
 			// EditInformation
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
-			this->ClientSize = System::Drawing::Size(684, 731);
+			this->ClientSize = System::Drawing::Size(912, 900);
 			this->Controls->Add(this->searchBtn);
 			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->textBox3);
@@ -264,6 +291,7 @@ namespace BankManagementSystem {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->saveButton);
 			this->Controls->Add(this->label2);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"EditInformation";
 			this->Text = L"EditInformation";
 			this->ResumeLayout(false);

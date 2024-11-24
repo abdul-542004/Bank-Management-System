@@ -1,5 +1,7 @@
 E:\Repos\BankManagementSystem\BankManagementSystem\AccountInfoForm.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\AccountInfoForm.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\AdminForm.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\AdminForm.obj
+E:\Repos\BankManagementSystem\BankManagementSystem\ATM.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\ATM.obj
+E:\Repos\BankManagementSystem\BankManagementSystem\ATMServices.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\ATMServices.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\AVLNode.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\AVLNode.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\AVLTree.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\AVLTree.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\BankCustomer.obj
@@ -10,6 +12,7 @@ E:\Repos\BankManagementSystem\BankManagementSystem\DeletedAccounts.cpp;E:\Repos\
 E:\Repos\BankManagementSystem\BankManagementSystem\DepositCashForm.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\DepositCashForm.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\DynamicArray.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\DynamicArray.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\EditInformation.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\EditInformation.obj
+E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\LinkedList.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\ListAllAccounts.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\ListAllAccounts.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\LoginForm.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\LoginForm.obj
 E:\Repos\BankManagementSystem\BankManagementSystem\MainForm.cpp;E:\Repos\BankManagementSystem\BankManagementSystem\x64\Debug\MainForm.obj

@@ -1,5 +1,6 @@
 #pragma once
 #include "LoginForm.h"
+#include "ATM.h"
 namespace BankManagementSystem {
 
 	using namespace System;
@@ -49,7 +50,7 @@ namespace BankManagementSystem {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 
 	private:
 		/// <summary>
@@ -64,14 +65,11 @@ namespace BankManagementSystem {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -79,9 +77,10 @@ namespace BankManagementSystem {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Bahnschrift SemiBold SemiConden", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(218, 56);
+			this->label1->Location = System::Drawing::Point(291, 69);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(350, 39);
+			this->label1->Size = System::Drawing::Size(438, 48);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Bank Management System";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -90,9 +89,10 @@ namespace BankManagementSystem {
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(262, 152);
+			this->button1->Location = System::Drawing::Point(349, 187);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(260, 34);
+			this->button1->Size = System::Drawing::Size(347, 42);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Login as Admin";
 			this->button1->UseVisualStyleBackColor = true;
@@ -102,9 +102,10 @@ namespace BankManagementSystem {
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(262, 233);
+			this->button2->Location = System::Drawing::Point(349, 287);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(260, 34);
+			this->button2->Size = System::Drawing::Size(347, 42);
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Login as Staff";
 			this->button2->UseVisualStyleBackColor = true;
@@ -114,49 +115,42 @@ namespace BankManagementSystem {
 			// 
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(262, 314);
+			this->button3->Location = System::Drawing::Point(349, 386);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(260, 34);
+			this->button3->Size = System::Drawing::Size(347, 42);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"ATM Service";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MainForm::button3_Click);
 			// 
 			// button4
 			// 
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(262, 395);
+			this->button4->Location = System::Drawing::Point(349, 486);
+			this->button4->Margin = System::Windows::Forms::Padding(4);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(260, 34);
+			this->button4->Size = System::Drawing::Size(347, 42);
 			this->button4->TabIndex = 4;
 			this->button4->Text = L"Exit";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &MainForm::button4_Click);
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(113, 132);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(101, 103);
-			this->pictureBox1->TabIndex = 5;
-			this->pictureBox1->TabStop = false;
-			// 
 			// MainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
-			this->ClientSize = System::Drawing::Size(784, 561);
-			this->Controls->Add(this->pictureBox1);
+			this->ClientSize = System::Drawing::Size(1045, 690);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MainForm";
 			this->Text = L"MainForm";
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -171,7 +165,7 @@ namespace BankManagementSystem {
 			//hello
 			LoginForm^ login = gcnew LoginForm();
 			login->Show();
-			this->Hide();
+			
 
 		}
 		System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -180,5 +174,9 @@ namespace BankManagementSystem {
 	
 		}
 
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	ATM^ atm = gcnew ATM();
+	atm->Show();
+}
 };
 }

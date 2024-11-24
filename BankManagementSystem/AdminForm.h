@@ -101,17 +101,19 @@ namespace BankManagementSystem {
 			this->panelside->Controls->Add(this->editInfoBtn);
 			this->panelside->Controls->Add(this->deleteAccBtn);
 			this->panelside->Dock = System::Windows::Forms::DockStyle::Left;
-			this->panelside->Location = System::Drawing::Point(0, 30);
+			this->panelside->Location = System::Drawing::Point(0, 37);
+			this->panelside->Margin = System::Windows::Forms::Padding(4);
 			this->panelside->Name = L"panelside";
-			this->panelside->Size = System::Drawing::Size(300, 731);
+			this->panelside->Size = System::Drawing::Size(400, 900);
 			this->panelside->TabIndex = 0;
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(103, 48);
+			this->pictureBox1->Location = System::Drawing::Point(137, 59);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(100, 100);
+			this->pictureBox1->Size = System::Drawing::Size(133, 123);
 			this->pictureBox1->TabIndex = 6;
 			this->pictureBox1->TabStop = false;
 			// 
@@ -125,9 +127,10 @@ namespace BankManagementSystem {
 			this->searchAccBtn->ForeColor = System::Drawing::Color::White;
 			this->searchAccBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"searchAccBtn.Image")));
 			this->searchAccBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->searchAccBtn->Location = System::Drawing::Point(44, 370);
+			this->searchAccBtn->Location = System::Drawing::Point(59, 455);
+			this->searchAccBtn->Margin = System::Windows::Forms::Padding(4);
 			this->searchAccBtn->Name = L"searchAccBtn";
-			this->searchAccBtn->Size = System::Drawing::Size(212, 50);
+			this->searchAccBtn->Size = System::Drawing::Size(283, 62);
 			this->searchAccBtn->TabIndex = 5;
 			this->searchAccBtn->Text = L"Search Account";
 			this->searchAccBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -144,9 +147,10 @@ namespace BankManagementSystem {
 			this->createAccBtn->ForeColor = System::Drawing::Color::White;
 			this->createAccBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"createAccBtn.Image")));
 			this->createAccBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->createAccBtn->Location = System::Drawing::Point(44, 238);
+			this->createAccBtn->Location = System::Drawing::Point(59, 293);
+			this->createAccBtn->Margin = System::Windows::Forms::Padding(4);
 			this->createAccBtn->Name = L"createAccBtn";
-			this->createAccBtn->Size = System::Drawing::Size(212, 50);
+			this->createAccBtn->Size = System::Drawing::Size(283, 62);
 			this->createAccBtn->TabIndex = 0;
 			this->createAccBtn->Text = L"Create Account";
 			this->createAccBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -163,11 +167,12 @@ namespace BankManagementSystem {
 			this->deletedAccsBtn->ForeColor = System::Drawing::Color::White;
 			this->deletedAccsBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"deletedAccsBtn.Image")));
 			this->deletedAccsBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->deletedAccsBtn->Location = System::Drawing::Point(44, 568);
+			this->deletedAccsBtn->Location = System::Drawing::Point(59, 699);
+			this->deletedAccsBtn->Margin = System::Windows::Forms::Padding(4);
 			this->deletedAccsBtn->Name = L"deletedAccsBtn";
-			this->deletedAccsBtn->Size = System::Drawing::Size(212, 50);
+			this->deletedAccsBtn->Size = System::Drawing::Size(283, 62);
 			this->deletedAccsBtn->TabIndex = 4;
-			this->deletedAccsBtn->Text = L"Deleted Accounts";
+			this->deletedAccsBtn->Text = L"Account Logs";
 			this->deletedAccsBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			this->deletedAccsBtn->UseVisualStyleBackColor = false;
 			this->deletedAccsBtn->Click += gcnew System::EventHandler(this, &AdminForm::deletedAccsBtn_Click);
@@ -182,9 +187,10 @@ namespace BankManagementSystem {
 			this->listAllAccBtn->ForeColor = System::Drawing::Color::White;
 			this->listAllAccBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"listAllAccBtn.Image")));
 			this->listAllAccBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->listAllAccBtn->Location = System::Drawing::Point(44, 436);
+			this->listAllAccBtn->Location = System::Drawing::Point(59, 537);
+			this->listAllAccBtn->Margin = System::Windows::Forms::Padding(4);
 			this->listAllAccBtn->Name = L"listAllAccBtn";
-			this->listAllAccBtn->Size = System::Drawing::Size(212, 50);
+			this->listAllAccBtn->Size = System::Drawing::Size(283, 62);
 			this->listAllAccBtn->TabIndex = 1;
 			this->listAllAccBtn->Text = L"List of All Accounts";
 			this->listAllAccBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -201,9 +207,10 @@ namespace BankManagementSystem {
 			this->editInfoBtn->ForeColor = System::Drawing::Color::White;
 			this->editInfoBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"editInfoBtn.Image")));
 			this->editInfoBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->editInfoBtn->Location = System::Drawing::Point(44, 502);
+			this->editInfoBtn->Location = System::Drawing::Point(59, 618);
+			this->editInfoBtn->Margin = System::Windows::Forms::Padding(4);
 			this->editInfoBtn->Name = L"editInfoBtn";
-			this->editInfoBtn->Size = System::Drawing::Size(212, 50);
+			this->editInfoBtn->Size = System::Drawing::Size(283, 62);
 			this->editInfoBtn->TabIndex = 3;
 			this->editInfoBtn->Text = L"Edit Information";
 			this->editInfoBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -220,9 +227,10 @@ namespace BankManagementSystem {
 			this->deleteAccBtn->ForeColor = System::Drawing::Color::White;
 			this->deleteAccBtn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"deleteAccBtn.Image")));
 			this->deleteAccBtn->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->deleteAccBtn->Location = System::Drawing::Point(44, 304);
+			this->deleteAccBtn->Location = System::Drawing::Point(59, 374);
+			this->deleteAccBtn->Margin = System::Windows::Forms::Padding(4);
 			this->deleteAccBtn->Name = L"deleteAccBtn";
-			this->deleteAccBtn->Size = System::Drawing::Size(212, 50);
+			this->deleteAccBtn->Size = System::Drawing::Size(283, 62);
 			this->deleteAccBtn->TabIndex = 2;
 			this->deleteAccBtn->Text = L"Delete Account";
 			this->deleteAccBtn->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
@@ -234,26 +242,29 @@ namespace BankManagementSystem {
 			this->panelheader->BackColor = System::Drawing::Color::Gray;
 			this->panelheader->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panelheader->Location = System::Drawing::Point(0, 0);
+			this->panelheader->Margin = System::Windows::Forms::Padding(4);
 			this->panelheader->Name = L"panelheader";
-			this->panelheader->Size = System::Drawing::Size(984, 30);
+			this->panelheader->Size = System::Drawing::Size(1312, 37);
 			this->panelheader->TabIndex = 1;
 			// 
 			// mainpanel
 			// 
 			this->mainpanel->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->mainpanel->Location = System::Drawing::Point(300, 30);
+			this->mainpanel->Location = System::Drawing::Point(400, 37);
+			this->mainpanel->Margin = System::Windows::Forms::Padding(4);
 			this->mainpanel->Name = L"mainpanel";
-			this->mainpanel->Size = System::Drawing::Size(684, 731);
+			this->mainpanel->Size = System::Drawing::Size(912, 900);
 			this->mainpanel->TabIndex = 2;
 			// 
 			// AdminForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(984, 761);
+			this->ClientSize = System::Drawing::Size(1312, 937);
 			this->Controls->Add(this->mainpanel);
 			this->Controls->Add(this->panelside);
 			this->Controls->Add(this->panelheader);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"AdminForm";
 			this->Text = L"AdminForm";
 			this->panelside->ResumeLayout(false);

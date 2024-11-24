@@ -65,9 +65,10 @@ namespace BankManagementSystem {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(162, 55);
+			this->label1->Location = System::Drawing::Point(216, 68);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(0, 13);
+			this->label1->Size = System::Drawing::Size(0, 16);
 			this->label1->TabIndex = 0;
 			// 
 			// label2
@@ -75,26 +76,31 @@ namespace BankManagementSystem {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Bahnschrift SemiBold SemiConden", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(62, 39);
+			this->label2->Location = System::Drawing::Point(83, 48);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(264, 33);
+			this->label2->Size = System::Drawing::Size(333, 41);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Delete Existing Account";
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(316, 153);
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox1->Location = System::Drawing::Point(421, 188);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(247, 20);
+			this->textBox1->Size = System::Drawing::Size(328, 28);
 			this->textBox1->TabIndex = 10;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F));
-			this->label3->Location = System::Drawing::Point(63, 148);
+			this->label3->Location = System::Drawing::Point(84, 182);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(214, 25);
+			this->label3->Size = System::Drawing::Size(271, 32);
 			this->label3->TabIndex = 9;
 			this->label3->Text = L"Enter Account Number: ";
 			// 
@@ -102,9 +108,10 @@ namespace BankManagementSystem {
 			// 
 			this->DeleteButton->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->DeleteButton->Location = System::Drawing::Point(241, 255);
+			this->DeleteButton->Location = System::Drawing::Point(321, 314);
+			this->DeleteButton->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->DeleteButton->Name = L"DeleteButton";
-			this->DeleteButton->Size = System::Drawing::Size(120, 35);
+			this->DeleteButton->Size = System::Drawing::Size(160, 43);
 			this->DeleteButton->TabIndex = 16;
 			this->DeleteButton->Text = L"Delete";
 			this->DeleteButton->UseVisualStyleBackColor = true;
@@ -112,16 +119,17 @@ namespace BankManagementSystem {
 			// 
 			// DeleteAccount
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
-			this->ClientSize = System::Drawing::Size(684, 731);
+			this->ClientSize = System::Drawing::Size(912, 900);
 			this->Controls->Add(this->DeleteButton);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"DeleteAccount";
 			this->Text = L"DeleteAccount";
 			this->ResumeLayout(false);

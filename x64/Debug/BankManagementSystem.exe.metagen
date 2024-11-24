@@ -1,5 +1,7 @@
   BankManagementSystem.AccountInfoForm.resources - Embedded, ContainedInManifestFile, 
   BankManagementSystem.AdminForm.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.ATM.resources - Embedded, ContainedInManifestFile, 
+  BankManagementSystem.ATMServices.resources - Embedded, ContainedInManifestFile, 
   BankManagementSystem.CheckLogsForm.resources - Embedded, ContainedInManifestFile, 
   BankManagementSystem.CreateAccount.resources - Embedded, ContainedInManifestFile, 
   BankManagementSystem.DeleteAccount.resources - Embedded, ContainedInManifestFile, 
@@ -27,9 +29,6 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Class BankManagementSystem.AccountInfoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class BankCustomer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(Int32, System.String, System.String, System.String, System.String, System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
@@ -40,8 +39,10 @@ Class BankCustomer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     System.String accountType : Public
     System.String pin : Public
     Double balance : Public
+    LinkedList`1[System.String] transactionHistory : Public
   Methods:
-    DisplayDetails(): PrivateScope, Public, HideBySig
+    AddTransaction(String): PrivateScope, Public, HideBySig
+    GetTransactionHistory(): PrivateScope, Public, HideBySig
 Class AVLNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(BankCustomer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
@@ -58,19 +59,24 @@ Class AVLTree: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Search(Int32): PrivateScope, Public, HideBySig
     Traversal(DynamicArray<BankCustomer ^>&): PrivateScope, Public, HideBySig
     EditInformation(Int32, BankCustomer): PrivateScope, Public, HideBySig
+    Deposit(Int32, String, Double): PrivateScope, Public, HideBySig
+    Withdraw(Int32, String, Double): PrivateScope, Public, HideBySig
 Class DynamicArray<BankCustomer ^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Interfaces:
     System.IDisposable
   Methods:
-    op_Subscript(Int32): PrivateScope, Public, HideBySig, SpecialName
     push_back(BankCustomer): PrivateScope, Public, HideBySig
-    getSize(): PrivateScope, Public, HideBySig
     Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    op_Subscript(Int32): PrivateScope, Public, HideBySig, SpecialName
+    getSize(): PrivateScope, Public, HideBySig
 Class BankManagementSystem.Storage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     AVLTree storageTree : Public, Static
+Class BankManagementSystem.AccountInfoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class BankManagementSystem.CreateAccount: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -96,6 +102,15 @@ Class BankManagementSystem.AdminForm: AutoLayout, AnsiClass, Class, Public, Befo
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     loadForm(Object): PrivateScope, Public, HideBySig
+Class BankManagementSystem.ATMServices: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(BankCustomer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    BankCustomer customer : Public
+Class BankManagementSystem.ATM: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class BankManagementSystem.CheckLogsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

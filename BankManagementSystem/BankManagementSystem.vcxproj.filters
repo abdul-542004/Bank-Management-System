@@ -69,6 +69,15 @@
     <ClCompile Include="DynamicArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ATM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ATMServices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
@@ -96,9 +105,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DeletedAccounts.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StaffForm.h">
@@ -129,6 +135,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DynamicArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ATM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ATMServices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

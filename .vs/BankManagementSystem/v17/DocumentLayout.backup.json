@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Repos\\BankManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Abdullah\\BankManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\EditInformation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\BankCustomer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\BankCustomer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\EditInformation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\AVLNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\AVLNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\CreateAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\CreateAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\LinkedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\LinkedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\CreateAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\CreateAccount.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\AVLTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\AVLTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\AVLTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|E:\\Repos\\BankManagementSystem\\BankManagementSystem\\Search.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{2520F962-74E5-46ED-922E-6249C887E8BC}|BankManagementSystem\\BankManagementSystem.vcxproj|solutionrelative:BankManagementSystem\\Search.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,77 +35,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateAccount.h",
-              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\CreateAccount.h",
-              "RelativeDocumentMoniker": "BankManagementSystem\\CreateAccount.h",
-              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\CreateAccount.h",
-              "RelativeToolTip": "BankManagementSystem\\CreateAccount.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
+              "Title": "LinkedList.h",
+              "DocumentMoniker": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\LinkedList.h",
+              "RelativeDocumentMoniker": "BankManagementSystem\\LinkedList.h",
+              "ToolTip": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\LinkedList.h",
+              "RelativeToolTip": "BankManagementSystem\\LinkedList.h",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T14:26:50.88Z",
+              "WhenOpened": "2024-11-18T05:57:48.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditInformation.h",
-              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h",
-              "RelativeDocumentMoniker": "BankManagementSystem\\EditInformation.h",
-              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h",
-              "RelativeToolTip": "BankManagementSystem\\EditInformation.h",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAswBsAAAApAAAAAAAAAA==",
+              "Title": "BankCustomer.h",
+              "DocumentMoniker": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\BankCustomer.h",
+              "RelativeDocumentMoniker": "BankManagementSystem\\BankCustomer.h",
+              "ToolTip": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\BankCustomer.h",
+              "RelativeToolTip": "BankManagementSystem\\BankCustomer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T14:16:46.167Z",
+              "WhenOpened": "2024-11-18T04:23:13.074Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AVLTree.h",
-              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\AVLTree.h",
-              "RelativeDocumentMoniker": "BankManagementSystem\\AVLTree.h",
-              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\AVLTree.h",
-              "RelativeToolTip": "BankManagementSystem\\AVLTree.h",
-              "ViewState": "AgIAANYAAAAAAAAAAAAswOsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T14:13:19.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Search.h [Design]",
-              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\Search.h",
-              "RelativeDocumentMoniker": "BankManagementSystem\\Search.h",
-              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\Search.h [Design]",
-              "RelativeToolTip": "BankManagementSystem\\Search.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T14:12:33.012Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditInformation.h [Design]",
-              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h",
-              "RelativeDocumentMoniker": "BankManagementSystem\\EditInformation.h",
-              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\EditInformation.h [Design]",
-              "RelativeToolTip": "BankManagementSystem\\EditInformation.h [Design]",
+              "Title": "AVLNode.h",
+              "DocumentMoniker": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\AVLNode.h",
+              "RelativeDocumentMoniker": "BankManagementSystem\\AVLNode.h",
+              "ToolTip": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\AVLNode.h",
+              "RelativeToolTip": "BankManagementSystem\\AVLNode.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T14:05:09.972Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T04:22:58.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateAccount.h [Design]",
-              "DocumentMoniker": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\CreateAccount.h",
-              "RelativeDocumentMoniker": "BankManagementSystem\\CreateAccount.h",
-              "ToolTip": "E:\\Repos\\BankManagementSystem\\BankManagementSystem\\CreateAccount.h [Design]",
-              "RelativeToolTip": "BankManagementSystem\\CreateAccount.h [Design]",
+              "Title": "AVLTree.h",
+              "DocumentMoniker": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\AVLTree.h",
+              "RelativeDocumentMoniker": "BankManagementSystem\\AVLTree.h",
+              "ToolTip": "C:\\Abdullah\\BankManagementSystem\\BankManagementSystem\\AVLTree.h",
+              "RelativeToolTip": "BankManagementSystem\\AVLTree.h",
+              "ViewState": "AgIAAKAAAAAAPDMzMzMLwIEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T12:14:45.36Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T04:22:54.043Z",
+              "EditorCaption": ""
             }
           ]
         },

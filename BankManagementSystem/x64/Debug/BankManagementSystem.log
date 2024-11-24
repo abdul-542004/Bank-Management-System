@@ -1,7 +1,117 @@
-﻿  AdminForm.cpp
+﻿  AccountInfoForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'AccountInfoForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  AdminForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'AdminForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  ATM.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'ATM.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  ATMServices.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'ATMServices.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  AVLNode.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'AVLNode.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  AVLTree.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'AVLTree.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  BankCustomer.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'BankCustomer.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  CheckLogsForm.cpp
+  CreateAccount.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'CreateAccount.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  DeleteAccount.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'DeleteAccount.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  DeletedAccounts.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'DeletedAccounts.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  DepositCashForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'DepositCashForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  DynamicArray.cpp
   EditInformation.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'EditInformation.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  LinkedList.cpp
+  ListAllAccounts.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'ListAllAccounts.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
   LoginForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'LoginForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
   MainForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'MainForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  Search.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'Search.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  StaffForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'StaffForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  Generating Code...
+  Compiling...
+  WithdrawCashForm.cpp
+E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
+  (compiling source file 'WithdrawCashForm.cpp')
+      E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
+      see declaration of 'LinkedList<System::String ^>'
+  
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Generating Code...
   AccountInfoForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   BankManagementSystem.vcxproj -> E:\Repos\BankManagementSystem\x64\Debug\BankManagementSystem.exe
