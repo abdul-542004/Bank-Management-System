@@ -69,10 +69,9 @@ namespace BankManagementSystem {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(272, 202);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(204, 164);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(188, 32);
+			this->label1->Size = System::Drawing::Size(150, 25);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Enter Username:";
 			// 
@@ -80,20 +79,19 @@ namespace BankManagementSystem {
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(480, 209);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Location = System::Drawing::Point(360, 170);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(264, 31);
+			this->textBox1->Size = System::Drawing::Size(199, 27);
 			this->textBox1->TabIndex = 1;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(480, 273);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox2->Location = System::Drawing::Point(360, 222);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(264, 31);
+			this->textBox2->PasswordChar = '*';
+			this->textBox2->Size = System::Drawing::Size(199, 27);
 			this->textBox2->TabIndex = 3;
 			// 
 			// label2
@@ -101,10 +99,9 @@ namespace BankManagementSystem {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(272, 266);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(204, 216);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(178, 32);
+			this->label2->Size = System::Drawing::Size(144, 25);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Enter Password:";
 			// 
@@ -113,20 +110,18 @@ namespace BankManagementSystem {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Bahnschrift SemiBold SemiConden", 21.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(462, 71);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(346, 58);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(106, 45);
+			this->label3->Size = System::Drawing::Size(84, 35);
 			this->label3->TabIndex = 4;
 			this->label3->Text = L"Login ";
 			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei UI", 15.75F));
-			this->button1->Location = System::Drawing::Point(423, 373);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(317, 303);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(184, 44);
+			this->button1->Size = System::Drawing::Size(138, 36);
 			this->button1->TabIndex = 5;
 			this->button1->Text = L"Login";
 			this->button1->UseVisualStyleBackColor = true;
@@ -134,17 +129,16 @@ namespace BankManagementSystem {
 			// 
 			// LoginForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
-			this->ClientSize = System::Drawing::Size(1045, 506);
+			this->ClientSize = System::Drawing::Size(784, 411);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"LoginForm";
 			this->Text = L"LoginForm";
 			this->ResumeLayout(false);
@@ -170,5 +164,6 @@ namespace BankManagementSystem {
 
 		}
 	}
+
 };
 }

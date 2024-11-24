@@ -1,4 +1,5 @@
 #pragma once
+#include "Storage.h"
 #include "LoginForm.h"
 #include "ATM.h"
 namespace BankManagementSystem {
@@ -24,6 +25,8 @@ namespace BankManagementSystem {
 		{
 
 			InitializeComponent();
+			String^ filePath = "customers.txt"; // Path to the file
+			Storage::storageTree->LoadFromFile(filePath);
 			
 			
 			
@@ -159,24 +162,26 @@ namespace BankManagementSystem {
 	private:
 
 		System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+			String^ filePath = "customers.txt"; // Path to the file
+			Storage::storageTree->SaveToFile(filePath);
 			this->Close();
 		}
 		System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-			//hello
+			//admin login
 			LoginForm^ login = gcnew LoginForm();
 			login->Show();
 			
 
 		}
 		System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-			//hello
+			//staff login
 			button1_Click(sender, e);
 	
 		}
-
-private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-	ATM^ atm = gcnew ATM();
-	atm->Show();
-}
+		
+		System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+			ATM^ atm = gcnew ATM();
+			atm->Show();
+		}
 };
 }

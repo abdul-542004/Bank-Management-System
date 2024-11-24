@@ -351,7 +351,7 @@ private: System::Void createButton_Click(System::Object^ sender, System::EventAr
 
 	// Add the deposit transaction to the transaction history
 	String^ transactionLog = "Deposited " + balance.ToString("C") + " to account.";
-	newCustomer->AddTransaction(transactionLog);  // Assuming you have a method in BankCustomer to add transactions.
+	newCustomer->transactionHistory->AddLast(transactionLog); 
 
 	// Insert the new customer into the storage tree
 	Storage::storageTree->Insert(newCustomer);

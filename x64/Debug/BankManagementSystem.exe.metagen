@@ -41,7 +41,6 @@ Class BankCustomer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Double balance : Public
     LinkedList`1[System.String] transactionHistory : Public
   Methods:
-    AddTransaction(String): PrivateScope, Public, HideBySig
     GetTransactionHistory(): PrivateScope, Public, HideBySig
 Class AVLNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(BankCustomer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -61,15 +60,17 @@ Class AVLTree: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     EditInformation(Int32, BankCustomer): PrivateScope, Public, HideBySig
     Deposit(Int32, String, Double): PrivateScope, Public, HideBySig
     Withdraw(Int32, String, Double): PrivateScope, Public, HideBySig
+    SaveToFile(String): PrivateScope, Public, HideBySig
+    LoadFromFile(String): PrivateScope, Public, HideBySig
 Class DynamicArray<BankCustomer ^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Interfaces:
     System.IDisposable
   Methods:
-    push_back(BankCustomer): PrivateScope, Public, HideBySig
-    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
     op_Subscript(Int32): PrivateScope, Public, HideBySig, SpecialName
+    push_back(BankCustomer): PrivateScope, Public, HideBySig
     getSize(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
 Class BankManagementSystem.Storage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
