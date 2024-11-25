@@ -64,6 +64,7 @@ Class AVLTree: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     LoadFromFile(String): PrivateScope, Public, HideBySig
 Class DynamicArray<BankCustomer ^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Interfaces:
     System.IDisposable
   Methods:
@@ -71,6 +72,7 @@ Class DynamicArray<BankCustomer ^>: AutoLayout, AnsiClass, Class, Public, Before
     push_back(BankCustomer): PrivateScope, Public, HideBySig
     getSize(): PrivateScope, Public, HideBySig
     Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    QuickSort(Int32): PrivateScope, Public, HideBySig
 Class BankManagementSystem.Storage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
@@ -97,7 +99,7 @@ Class BankManagementSystem.ListAllAccounts: AutoLayout, AnsiClass, Class, Public
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
-    DynamicArray<BankCustomer ^> array : Public
+    DynamicArray<BankCustomer ^> customers : Public
 Class BankManagementSystem.AdminForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

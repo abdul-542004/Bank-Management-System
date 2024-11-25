@@ -52,6 +52,7 @@ E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warnin
       E:\Repos\BankManagementSystem\BankManagementSystem\LinkedList.h(20,11):
       see declaration of 'LinkedList<System::String ^>'
   
+  DynamicArray.cpp
   EditInformation.cpp
 E:\Repos\BankManagementSystem\BankManagementSystem\BankCustomer.h(14,44): warning C4677: 'transactionHistory': signature of non-private member contains assembly private type 'LinkedList<System::String ^>'
   (compiling source file 'EditInformation.cpp')

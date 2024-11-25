@@ -16,19 +16,19 @@ namespace BankManagementSystem {
 	public ref class ListAllAccounts : public System::Windows::Forms::Form
 	{
 	public:
-		DynamicArray<BankCustomer^>^ array = gcnew DynamicArray<BankCustomer^>();
+		DynamicArray<BankCustomer^>^ customers = gcnew DynamicArray<BankCustomer^>();
 
 		ListAllAccounts(void)
 		{
 			InitializeComponent();
 			//
 			//TODO: Add the constructor code here
-			Storage::storageTree->Traversal(array);
+			Storage::storageTree->Traversal(customers);
 
 			// Iterate through the array using an index-based loop and add rows to the DataGridView
-			for (int i = 0; i < array->getSize(); i++)
+			for (int i = 0; i < customers->getSize(); i++)
 			{
-				BankCustomer^ customer = array[i]; // Get the customer at index i
+				BankCustomer^ customer = customers[i]; // Get the customer at index i
 
 				// Add a new row to the DataGridView with customer details
 				dataGridView1->Rows->Add(customer->accountNumber,
@@ -61,6 +61,10 @@ namespace BankManagementSystem {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Type;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Balance;
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::ComboBox^ comboBox2;
+	private: System::Windows::Forms::Label^ label3;
+
+
 	protected:
 
 	private:
@@ -85,6 +89,8 @@ namespace BankManagementSystem {
 			this->Type = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Balance = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -153,12 +159,37 @@ namespace BankManagementSystem {
 			this->label2->TabIndex = 16;
 			this->label2->Text = L"All Accounts";
 			// 
+			// comboBox2
+			// 
+			this->comboBox2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Account ID", L"Name", L"Balance" });
+			this->comboBox2->Location = System::Drawing::Point(534, 73);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(121, 28);
+			this->comboBox2->TabIndex = 18;
+			this->comboBox2->SelectedIndexChanged += gcnew System::EventHandler(this, &ListAllAccounts::comboBox2_SelectedIndexChanged);
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(469, 76);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(59, 20);
+			this->label3->TabIndex = 19;
+			this->label3->Text = L"Sort By:";
+			// 
 			// ListAllAccounts
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Azure;
 			this->ClientSize = System::Drawing::Size(684, 731);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->comboBox2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->label1);
@@ -171,5 +202,48 @@ namespace BankManagementSystem {
 
 		}
 #pragma endregion
-	};
+
+
+		
+
+
+		   
+
+		   
+
+
+private: System::Void comboBox2_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	DynamicArray<BankCustomer^>^ sortedList;
+
+	// Check the selected item in the combo box and call QuickSort with the appropriate criteria
+	if (comboBox2->SelectedItem->ToString() == "Account ID") {
+		sortedList = customers->QuickSort(1);
+	}
+	else if (comboBox2->SelectedItem->ToString() == "Name") {
+		sortedList = customers->QuickSort(2);
+	}
+	else if (comboBox2->SelectedItem->ToString() == "Balance") {
+		sortedList = customers->QuickSort(3);
+	}
+
+	// Clear the existing rows before adding new sorted data
+	dataGridView1->Rows->Clear();
+
+	// Iterate through the sorted list and add rows to the DataGridView
+	for (int i = 0; i < sortedList->getSize(); i++) {
+		BankCustomer^ customer = sortedList[i]; // Get the customer at index i
+
+		// Add a new row to the DataGridView with customer details
+		dataGridView1->Rows->Add(
+			customer->accountNumber,
+			customer->name,
+			customer->cnic,
+			customer->gender,
+			customer->accountType,
+			customer->balance.ToString("F2")
+		);
+	}
+}
+
+};
 }
